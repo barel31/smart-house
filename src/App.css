@@ -1,0 +1,148 @@
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1,
+h2,
+h3,
+label,
+p {
+    color: #eeeeee;
+}
+
+footer {
+    color: #ecb365;
+}
+
+h3,
+p {
+    margin: 0;
+}
+
+.App {
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+    margin: auto;
+    max-width: 40em;
+    background-color: #222831;
+}
+
+.Exit {
+    font-size: larger;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.5em;
+    width: 2em;
+}
+
+button {
+    cursor: pointer;
+}
+
+.custom-btn {
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+}
+
+/* 7 */
+.btn-7 {
+    background: linear-gradient(0deg, #fd5d5d 0%, #f24a72 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+.btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: 0;
+    background: #f24a72;
+    transition: all 0.3s ease;
+}
+.btn-7:before {
+    height: 0%;
+    width: 2px;
+}
+.btn-7:after {
+    width: 0%;
+    height: 2px;
+}
+.btn-7:hover {
+    color: #f24a72;
+    background: transparent;
+}
+.btn-7:hover:before {
+    height: 100%;
+}
+.btn-7:hover:after {
+    width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background: #f24a72;
+    transition: all 0.3s ease;
+}
+.btn-7 span:before {
+    width: 2px;
+    height: 0%;
+}
+.btn-7 span:after {
+    height: 2px;
+    width: 0%;
+}
+.btn-7 span:hover:before {
+    height: 100%;
+}
+.btn-7 span:hover:after {
+    width: 100%;
+}
+
+/* 4 */
+.btn-4 {
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    opacity: 0.8;
+}
+.btn-4:hover {
+    opacity: 1;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}

@@ -1,0 +1,26 @@
+.CreateRoom input[type='text'] {
+    display: block;
+    margin: 0.5em auto;
+}
+
+.BtnCreate {
+    margin: 0.5em auto;
+    display: block;
+    font-size: 2em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 10px 0 rgba(65, 132, 234, 0.75);
+    background-size: 300% 100%;
+    transition: all 0.4s ease-in-out;
+    color: black;
+}
+
+.BtnCreate:hover,
+.BtnCreate:active,
+.BtnCreate:focus {
+    background-position: 100% 0;
+    box-shadow: 0 4px 20px 5px rgba(65, 132, 234, 0.75);
+}

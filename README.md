@@ -1,2 +1,2 @@
 # smart-house
-Smart-House front react app UI ONLY
+Smart-House front-end react app UI ONLY

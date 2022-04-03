@@ -1,0 +1,126 @@
+.Room {
+    margin: 1vh;
+    border-radius: 5px;
+    color: #393e46;
+}
+.Room h2,
+.Room h3,
+.Room label,
+.Room p {
+    color: #393e46;
+}
+
+.Room select {
+    border-radius: 5px;
+}
+
+.Products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+
+.Product {
+    text-align: center;
+    height: 6em;
+    margin: 1em;
+}
+/* add hover to product */
+
+.Product button:first-child {
+    height: 10vh;
+    width: 100%;
+    font-size: larger;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 1px solid white;
+}
+.Product button:first-child:hover,
+.Product button:first-child:focus {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.Product button:first-child:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.DeleteProductBtn {
+    position: relative;
+    float: left;
+    bottom: 10vh;
+    height: 2.5vh;
+    width: 2.5vh;
+    margin: 0.3vh 0.4vh;
+    padding: 0;
+    border-radius: 5px;
+    background-color: #efefef;
+    transition: all 0.3s ease;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+.DeleteProductBtn:focus,
+.DeleteProductBtn:active,
+.DeleteProductBtn:hover {
+    background-color: #d1d1d1;
+}
+
+.AddProduct {
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.AddProductBtn {
+    background-color: #c3dbd9;
+    padding: 0.5em;
+    margin: 1em 1em 1em 0;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid black;
+    transition: all 0.1s ease-in-out;
+}
+
+.AddBtn {
+    display: block;
+    position: relative;
+    padding: 0.5em 2em;
+    margin: auto;
+    margin-top: 1em;
+    bottom: 0.5em;
+    background-color: #c3dbd9;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid black;
+    transition: all 0.1s ease-in-out;
+}
+
+.DeleteRoomBtn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 3.5em 1.2em;
+    padding: 1vh;
+    background-color: #bb6464;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out;
+    border: 1px solid black;
+    outline: 0;
+}
+
+.AddProductBtn:hover,
+.AddBtn:hover,
+.DeleteRoomBtn:hover {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+        rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border: 1px solid transparent;
+}
+
+.AddProductBtn:focus,
+.AddProductBtn:active,
+.AddBtn:focus,
+.AddBtn:active,
+.DeleteRoomBtn:focus,
+.DeleteRoomBtn:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
