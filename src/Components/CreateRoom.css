@@ -7,10 +7,7 @@
     color: red;
     border-color: red;
 }
-.CreateRoom input[type='text']::before:invalid {
-    content: 'only letters numbers and dashes allowed';
 
-}
 .BtnCreate {
     margin: 0.5em auto;
     display: block;
