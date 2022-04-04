@@ -22,7 +22,6 @@ export default function HomePage(props) {
                     );
                 })}
             </div>
-            {/* <button className="custom-btn custom-btn-relative btn-16">test</button> */}
             <Link to='/addroom'>
                 <button className='AddRoomBtn'>+</button>
             </Link>

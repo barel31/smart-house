@@ -27,6 +27,8 @@ export default function CreateRoom() {
                 name='name'
                 placeholder='Room name'
                 maxLength='5'
+                pattern='[A-Za-z0-9-]+'
+                title='only letters numbers and dashes allowed'
                 onChange={(e) => setRoomName(e.target.value)}
             />
             <label htmlFor='name'>Room color: </label>

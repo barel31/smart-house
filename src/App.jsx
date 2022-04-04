@@ -48,7 +48,6 @@ function App() {
 
     const isRoomNameValid = (name) => {
         if (rooms.find((room) => room.name === name) !== undefined) {
-            // alert(`You already have a room with the name ${name}. Please choose another name`);
             toast_bottom(`ERROR! The name ${name} is taken by another room!`, false);
             return false;
         }
@@ -59,14 +58,12 @@ function App() {
             +         one or more times (change to * to allow empty string)
             $         end of string    
             /i        case-insensitive */
-            // alert('You must to give a valid name to the room');
-            toast_bottom(`ERROR! the given name is not a valid room name!`, false);
+            toast_bottom(`ERROR! Invalid room name! Only letters numbers and dashes are allowed.`, false);
             return false;
         }
 
         if (name.length > 5 || name.length < 1) {
-            // alert('The length of the room name must to be up to 5 characters');
-            toast_bottom('ERROR! The room length must to be up to 5 characters only!', false);
+            toast_bottom('ERROR! The room length must to be up to 5 characters!', false);
             return false;
         }
 
