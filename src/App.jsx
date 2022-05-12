@@ -87,40 +87,42 @@ function App() {
 
     return (
         <div className='App'>
-            <h1>Smart House</h1>
-            <Provider value={createNewRoom}>
-                <HashRouter>
-                    <Link to='/'>
-                        <button className='Exit custom-btn btn-7'>
-                            <span>X</span>
-                        </button>
-                    </Link>
-                    <Routes>
-                        <Route path='/' element={<HomePage rooms={rooms} />} />
-                        {rooms.map((v, i) => {
-                            return (
-                                <Route
-                                    key={i}
-                                    path={'/room-' + v.name}
-                                    element={
-                                        <Room
-                                            room={rooms[i]}
-                                            deleteRoom={deleteRoom}
-                                            index={i}
-                                            products={rooms[i].products}
-                                            addProduct={addNewProduct}
-                                            deleteProduct={deleteProduct}
-                                            editRoom={editRoom}
-                                        />
-                                    }
-                                />
-                            );
-                        })}
-                        <Route path='/addroom' element={<CreateRoom />} />
-                    </Routes>
-                </HashRouter>
-            </Provider>
-            <ToastContainer />
+            <div className='container'>
+                <h1>Smart House</h1>
+                <Provider value={createNewRoom}>
+                    <HashRouter>
+                        <Link to='/'>
+                            <button className='Exit custom-btn btn-7'>
+                                <span>X</span>
+                            </button>
+                        </Link>
+                        <Routes>
+                            <Route path='/' element={<HomePage rooms={rooms} />} />
+                            {rooms.map((v, i) => {
+                                return (
+                                    <Route
+                                        key={i}
+                                        path={'/room-' + v.name}
+                                        element={
+                                            <Room
+                                                room={rooms[i]}
+                                                deleteRoom={deleteRoom}
+                                                index={i}
+                                                products={rooms[i].products}
+                                                addProduct={addNewProduct}
+                                                deleteProduct={deleteProduct}
+                                                editRoom={editRoom}
+                                            />
+                                        }
+                                    />
+                                );
+                            })}
+                            <Route path='/addroom' element={<CreateRoom />} />
+                        </Routes>
+                    </HashRouter>
+                </Provider>
+                <ToastContainer />
+            </div>
             <footer>Created by Barel Shraga with React</footer>
         </div>
     );
