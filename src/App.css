@@ -24,8 +24,10 @@ p {
     text-align: center;
     border: 1px solid black;
     margin: auto;
-    max-width: 40em;
+    max-width: 80vh;
+    height: 80vh;
     background-color: #222831;
+    user-select: none;
 }
 
 .Exit {
