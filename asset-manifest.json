@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/smart-house/static/css/main.206623ea.css",
-    "main.js": "/smart-house/static/js/main.2866eb32.js",
-    "static/js/787.af765c4b.chunk.js": "/smart-house/static/js/787.af765c4b.chunk.js",
+    "main.css": "/smart-house/static/css/main.aabb40b2.css",
+    "main.js": "/smart-house/static/js/main.8ce87e12.js",
     "index.html": "/smart-house/index.html",
-    "main.206623ea.css.map": "/smart-house/static/css/main.206623ea.css.map",
-    "main.2866eb32.js.map": "/smart-house/static/js/main.2866eb32.js.map",
-    "787.af765c4b.chunk.js.map": "/smart-house/static/js/787.af765c4b.chunk.js.map"
+    "main.aabb40b2.css.map": "/smart-house/static/css/main.aabb40b2.css.map",
+    "main.8ce87e12.js.map": "/smart-house/static/js/main.8ce87e12.js.map"
   },
   "entrypoints": [
-    "static/css/main.206623ea.css",
-    "static/js/main.2866eb32.js"
+    "static/css/main.aabb40b2.css",
+    "static/js/main.8ce87e12.js"
   ]
 }
